@@ -135,6 +135,18 @@ body {
   color: #fff;
 }
 
+.redemption-note {
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 1.5rem auto 2rem;
+  padding: 1rem;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+}
+
 .platforms {
   margin-bottom: 2rem;
 }
