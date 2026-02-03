@@ -115,9 +115,9 @@ body::after {
 /* Shooting stars - gentle diagonal from top-right to bottom-left */
 .shooting-star {
   position: fixed;
-  width: 80px;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.7), rgba(255,255,255,0.3), transparent);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0.5), transparent);
   pointer-events: none;
   z-index: -1;
   opacity: 0;
@@ -126,30 +126,51 @@ body::after {
 
 .shooting-star-1 {
   top: -5%;
-  right: 20%;
-  animation: shootingStar 6s linear infinite;
-  animation-delay: 3s;
+  right: 15%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 2s;
 }
 
 .shooting-star-2 {
   top: -5%;
-  right: 50%;
-  animation: shootingStar 6s linear infinite;
-  animation-delay: 12s;
+  right: 45%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 9s;
 }
 
 .shooting-star-3 {
   top: -5%;
-  right: 35%;
-  animation: shootingStar 6s linear infinite;
-  animation-delay: 20s;
+  right: 30%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 16s;
 }
 
 .shooting-star-4 {
   top: -5%;
-  right: 70%;
-  animation: shootingStar 6s linear infinite;
-  animation-delay: 8s;
+  right: 65%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 6s;
+}
+
+.shooting-star-5 {
+  top: -5%;
+  right: 80%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 13s;
+}
+
+.shooting-star-6 {
+  top: -5%;
+  right: 55%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 22s;
+}
+
+.shooting-star-7 {
+  top: -5%;
+  right: 25%;
+  animation: shootingStar 5s linear infinite;
+  animation-delay: 18s;
 }
 
 @keyframes shootingStar {
@@ -158,15 +179,15 @@ body::after {
     transform: rotate(135deg) translate(0, 0);
   }
   2% { 
-    opacity: 0.8;
+    opacity: 1;
   }
-  20% { 
+  18% { 
     opacity: 0; 
-    transform: rotate(135deg) translate(400px, 0);
+    transform: rotate(135deg) translate(450px, 0);
   }
   100% { 
     opacity: 0; 
-    transform: rotate(135deg) translate(400px, 0);
+    transform: rotate(135deg) translate(450px, 0);
   }
 }
 
