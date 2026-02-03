@@ -360,16 +360,12 @@ body::after {
 }
 
 .redemption-note {
-  color: #888;
+  color: #777;
   font-size: 0.8rem;
-  line-height: 1.5;
+  line-height: 1.7;
   max-width: 400px;
-  margin: 1.5rem auto 2rem;
-  padding: 1rem;
-  background: rgba(20, 20, 26, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.06);
+  margin: 1rem auto 2rem;
+  padding: 0;
 }
 
 .platforms {
