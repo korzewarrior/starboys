@@ -16,7 +16,7 @@
 
   <div class="container">
     <div class="badge badge-expo">GameOn Expo 2026 Exclusive</div>
-    <img src="img/hero.png" alt="Starboys" class="hero">
+    <img src="img/hero.png" alt="Starboys" class="hero" id="heroImage">
     <p class="tagline">Walk on walls. Fight on ceilings. Flip gravity and get the drop on your friends.</p>
 
     <div class="features">
@@ -80,6 +80,12 @@
     </footer>
   </div>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="Starboys" class="lightbox-img" id="lightboxImg">
+  </div>
+
   <script>
     // Feature modal functionality
     const featureData = {
@@ -130,6 +136,29 @@
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+    });
+
+    // Lightbox functionality
+    const heroImage = document.getElementById('heroImage');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    heroImage.addEventListener('click', () => {
+      lightboxImg.src = heroImage.src;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
     });
   </script>
 </body>
