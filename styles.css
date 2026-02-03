@@ -411,9 +411,18 @@ footer a:hover {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    align-items: center;
   }
 
   .pack-info {
+    text-align: center;
+  }
+
+  .pack-price {
+    text-align: center;
+  }
+
+  .pack-pricing {
     text-align: center;
   }
 }
