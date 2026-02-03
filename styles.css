@@ -115,9 +115,9 @@ body::after {
 /* Shooting stars - gentle diagonal from top-right to bottom-left */
 .shooting-star {
   position: fixed;
-  width: 120px;
+  width: 150px;
   height: 2px;
-  background: linear-gradient(270deg, rgba(255,255,255,1), rgba(255,255,255,0.5), transparent);
+  background: linear-gradient(270deg, rgba(255,255,255,1), rgba(255,255,255,0.4), transparent);
   pointer-events: none;
   z-index: -1;
   opacity: 0;
@@ -125,52 +125,31 @@ body::after {
 }
 
 .shooting-star-1 {
-  top: -5%;
-  right: 15%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 2s;
+  top: -10%;
+  right: -5%;
+  animation: shootingStar 2.5s linear infinite;
+  animation-delay: 4s;
 }
 
 .shooting-star-2 {
-  top: -5%;
-  right: 45%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 9s;
+  top: -10%;
+  right: 20%;
+  animation: shootingStar 2.5s linear infinite;
+  animation-delay: 18s;
 }
 
 .shooting-star-3 {
-  top: -5%;
-  right: 30%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 16s;
+  top: -10%;
+  right: -15%;
+  animation: shootingStar 2.5s linear infinite;
+  animation-delay: 35s;
 }
 
 .shooting-star-4 {
-  top: -5%;
-  right: 65%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 6s;
-}
-
-.shooting-star-5 {
-  top: -5%;
-  right: 80%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 13s;
-}
-
-.shooting-star-6 {
-  top: -5%;
-  right: 55%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 22s;
-}
-
-.shooting-star-7 {
-  top: -5%;
-  right: 25%;
-  animation: shootingStar 5s linear infinite;
-  animation-delay: 18s;
+  top: -10%;
+  right: 10%;
+  animation: shootingStar 2.5s linear infinite;
+  animation-delay: 52s;
 }
 
 @keyframes shootingStar {
@@ -178,16 +157,16 @@ body::after {
     opacity: 0; 
     transform: rotate(135deg) translate(0, 0);
   }
-  2% { 
+  1% { 
     opacity: 1;
   }
-  18% { 
-    opacity: 0; 
-    transform: rotate(135deg) translate(450px, 0);
+  99% { 
+    opacity: 0.3;
+    transform: rotate(135deg) translate(calc(100vw + 200px), 0);
   }
   100% { 
     opacity: 0; 
-    transform: rotate(135deg) translate(450px, 0);
+    transform: rotate(135deg) translate(calc(100vw + 200px), 0);
   }
 }
 
