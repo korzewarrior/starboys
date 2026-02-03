@@ -199,6 +199,13 @@ body::after {
   text-align: center;
 }
 
+.logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
 .badge {
   display: inline-block;
   background: rgba(42, 42, 53, 0.8);
